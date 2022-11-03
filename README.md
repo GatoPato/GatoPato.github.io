@@ -1,2 +1,2 @@
-# GatoPato.github.io
+# jenymunoz.github.io
 Soy Jeny Melissa Muñoz Mejia
