@@ -2,3 +2,7 @@ header{
     background-color: orange;
     height: 20%;
 }
+
+span.headertext{
+    text-align: right;
+}
