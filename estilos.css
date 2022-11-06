@@ -2,3 +2,6 @@ header{
     background-color: orange;
     height: 20%;
 }
+p.parrafoHeader{
+    letter-spacing: 10px;
+}
