@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contactanos</title>
+        <!--Página del proyecto de Aplicaciones Web-->
+        <!--Autora:Jeny Melissa Muñoz Mejia-->
+        <!--Este es el código de la página que contiene el formulario-->
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1 class="headertext">SERVICIO DE MUDANZA DE KONOJA</h1>
+                <div class="texto1">
+                    <nav class="a"><a href="contacto.html">Contáctanos</a></nav>
+                    <nav class="a"><a href="curriculumvitae.html">Currulum Vitae del Hokage</a></nav>
+                    <nav class="a"><a href="index.html">Página Principal</a></nav>
+                    <nav class="a"><a href="hokage.html">Actividades favoritas del Hokage</a> </nav>
+                    <nav class="a"><a href="informacion.html">Información del Proyecto</a></nav> 
+                </div>
+            </header>
+            <div class="lateral-izquierdo2">
+                    <h3>Otros Servicios</h3>
+                    <div class="b"><a href="https://naruto.fandom.com/es/wiki/Cartero_Ninja" target="_blank">Servicio de Mensajeria</a></div>
+                    <div class="b"><a href="https://naruto.fandom.com/es/wiki/Ichiraku_Ramen" target="_blank">Restaurante de Ichiraku</a></div>
+                    <h3>Información Adicional</h3>
+                    <div class="b"><a href="https://naruto.fandom.com/es/wiki/Polic%C3%ADa_Militar_de_Konoha#:~:text=El%20prop%C3%B3sito%20de%20la%20Polic%C3%ADa,del%20ANBU%20sin%20una%20autorizaci%C3%B3n." target="_blank">Policia de Konoja</a></div>
+                    <div class="b"><a href="https://naruto.fandom.com/es/wiki/Sistema_de_Jerarqu%C3%ADa_Shinobi" target="_blank">Rangos Ninja</a></div>
+            </div>
+            <section class="contacto">
+                <h2>Información de Contacto</h2>
+                <form action="mellomunozmejia@gmail.com" method="get">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <label>Nombre: <input type="text" name="nombre" size="40" required placeholder="Escriba su nombre completo"></label> 
+                        <p></p>
+                        Provincia 
+                        <select name="localización" id="localización">
+                            <option value="0">...</option>
+                            <option value="1">País del fuego</option>
+                            <option value="2">País de los Ríos</option>
+                            <option value="3">País del viento</option>
+                            <option value="4">País del rayo</option>
+                            <option value="5">País helado</option>
+                            <option value="6">País del remolino</option>
+                        </select>
+                        aldea
+                        <select name="aldea" id="aldea">
+                            <option value="0">...</option>
+                            <option value="1">Aldea escondida entre las hojas</option>
+                            <option value="2">Aldea escondida entre el sonido</option>
+                            <option value="3">Aldea escondida entre las piedras</option>
+                            <option value="4">Aldea escondida entre la arena</option>
+                            <option value="5">Aldea escondida entre la neblina</option>
+                            <option value="6">Aldea escondida entre la lluvia</option>
+                            <option value="7">Aldea escondida entre las hojas</option>
+                            <option value="8">Aldea escondida entre la cascada</option>
+                        </select>
+                        <p></p>
+                        <label>correo: <input type="email" name="correo" size="40" required placeholder="Escriba su correo electrónico" title="Si lo desea puede escribir su número telefónico en la caja de comenrarios"></label>
+                        <p></p>
+                        <label>Teléfono:<input type="tel" name="tel" size="40" required title="Escriba su número de teléfono"></label>
+                        <p></p>
+                        <p>¿Posición social política?:
+                            <input type="radio" name="p" value="Sí">Sí
+                            <input type="radio" name="p" value="No">No
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de Mudanza</legend>
+                            Tipo de Mudanza
+                            <select name="Tmudanza">
+                                <option value="0">...</option>
+                                <option value="1">Pesada</option>
+                                <option value="2">Liviana</option>
+                                <option value="3">Larga distancia</option>
+                                <option value="4">Corta distancia</option>
+                                <option value="5">Corta distancia pero pesada</option>
+                                <option value="6">Corta distancia pero Liviana</option>
+                                <option value="7">Larga distancia pero Liviana</option>
+                                <option value="8">Larga distancia pero pesada</option>
+                            </select>
+                            <p></p>
+                            Rango
+                            <select title="Los ninjas se dividen por rangos siendo el (rango A) el más alto">
+                            <option value="1">...</option>
+                            <option value="2">Rango A</option>
+                            <option value="3">Rango B</option>
+                            <option value="4">Rango C</option>
+                            <option value="5">Rango D</option>
+                            <option value="6">Rango E</option>
+                            <option value="7">Rango F</option>
+                            </select>
+                            <p></p>
+                            Transporte
+                            <select name="transporte" id="transporte" title="Si no encuentra el tipo de transporte necesario puede ponerlo en la caja de comentarios.">
+                                <option value="0">...</option>
+                                <option value="1">Camion</option>
+                                <option value="2">Camioneta</option>
+                                <option value="3">Otros</option>
+                            </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Comentarios:</legend>
+                        <textarea
+                          placeholder="Escribe aquí tus dudas"
+                          name="comentarios"
+                          id="comentarios"
+                          cols="30"
+                          rows="10"
+                        ></textarea>
+                        <p></p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </fieldset>
+                </form>
+            </section>
+            <footer>
+                <a href="https://github.com/jenymunoz/jenymunoz.github.io" target="_blank"><img src="image/logogithub.png" alt="Enlace a mi perfil personal de github" title="Perfil de github" width="53" height="53"></a>
+                <a href="https://naruto.fandom.com/es/wiki/Naruto_Wiki" target="_blank"><img src="image/naruto-logo.png" alt="Enlace al fandom de Naruto" title="Naruto Fandom" width="53" height="53"></a>
+                <a href="https://aulavirtual3.educa.madrid.org/ies.villablanca.madrid/mod/assign/view.php?id=109978" target="_blank"><img src="image/entregacaja.png" title="entrega proyecto" width="53" height="53"></a>
+            </footer>
+        </div>
+    </body>
+</html>
