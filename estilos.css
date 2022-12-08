@@ -1,1 +1,229 @@
+/*Autora: Jeny Melissa Muñoz Mejia*/
+/*Aquí se encuentran todos los estilos de los 5 documentos html*/
+header{
+    width: 100%;
+    height: 130px;
+    background: url(image/narutochiquito.png) left no-repeat ,orange url(image/narutochiquito.png) right no-repeat;
+    background-size: 6%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;         /*he utilizado estos tres tipos de position para que la barra se mantenga figa en un solo puesto sin que el scrol le afecte*/
+    position: sticky;
+    top: 0px;                 /*esto indica que no tiene ue estar separado de la parte superior del documento*/
+    z-index: 100;             /*este z-index sirve para que un elemento no se monte sobre otro, esto evita que los otros elementos se posicionen arriba del header*/
+}
+/*el h1 del header*/
+h1.headertext{
+    text-align:center;
+    letter-spacing: 5px;
+    height: 30px;
+}
+/*div dentro del header*/
+div.texto1{
+    padding: 25px;
+}
+/*etiqueta nav dentro del header*/
+header div.texto1 nav.a{
+    display: inline;
+    margin-right: 20px;
+}
+/*dentro de header para que el color de los elementos tipo a se vean de un color cuando el ratón se ponga sobre este*/
+header div.texto1 nav.a a:hover {
+    background-color:coral;
+    color: black;
+    border-radius: 5px;
+}
+/*esto determinia los elementos tipo a como se verán los links luego de que sean visitados*/
+header div.texto1 nav.a a:visited{
+    color: black;
+} 
 
+/*todos los links se veran de color negro y no tendrán el caracterítico subrayado*/
+a:link{
+    color: black;
+    text-decoration: none;
+}
+/*aquí acaban los estilos para el header*/
+
+/*clear: both permite que el footer su alineación natural esto es porque los los elementos flotantes descolocan un poco lo elementos*/
+footer{
+    background-color: orange;
+    height: 48px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+
+/*estos estilos son para la barra lateral izquierda de index.html y hokage.html*/
+div.lateral-izquierdo{
+    width: 15%;
+    height: 580px;
+    background-color: antiquewhite;
+    float: left;
+    text-align: center;
+}
+
+/*div lateral para contacto.html. Este lateral es diferente 
+ya que la página es más grande que las otras*/
+div.lateral-izquierdo2{
+    width: 15%;
+    height: 650px;
+    background-color: antiquewhite;
+    float: left;
+    text-align: center;
+}
+/*estilo para div clase b de la barra lateral para contacto.html*/
+div.lateral-izquierdo2 div.b{
+    background-color: coral; /*indica el color de fondo*/
+    margin-bottom: 10px;       /*va a separar los div.b 10px*/
+    border-radius: 10px; 
+    width: 50%; 
+    margin-left: 50px;  
+}
+
+/*a:visited es para la apariencia que tendrán los links al momento de ser visitados*/
+div.lateral-izquierdo2 div.b a:visited{
+    color: black;  /*indica que el color de las letras van a ser negras*/
+}
+
+/*:hover sirve para que al momento de poner el ratón sobre el link se pondrá de un color naranja resaltando mucho más*/
+div.lateral-izquierdo2 div.b:hover {
+    background-color:orange;
+    color: black;
+    border-radius: 10px; /*borde redondeado*/
+}
+/*aquí acaban lo estilos para div lateral2*/
+
+/*Estilos generales para div lateral izquierdo*/
+div.lateral-izquierdo div.b{
+    background-color: coral;
+    margin-bottom: 10px;
+    border-radius: 10px; 
+    width: 50%; 
+    margin-left: 50px;  
+}
+div.lateral-izquierdo div.b a:visited{
+    color: black;                       /*aspecto del texto para cuando este sea visitado*/
+}
+div.lateral-izquierdo div.b:hover {       /*se formará un cuadro de color naranja cuando el ratón se posicione sobre el link*/
+    background-color:orange;
+    color: black;
+    border-radius: 10px;
+}
+/*Aquí acaban los estilos para header,footer y div lateral-izquierdo que se van a mantener en todos los archivos*/
+
+/*estilos para los distintos section*/
+section h2{  /*para todos los h2 que se encuentren dentro de un h2*/
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   letter-spacing: 5px;
+   background-color: burlywood;
+}
+
+/*estilos para section de hokage.html*/
+section.section102{
+    width: 85%;
+    height: 580px;
+    background-color: bisque;
+    float: left;
+    text-align: center;
+}
+
+/*estilos a aplicar a todos los figure dentro de un section*/
+section figure{
+    display: inline-block;  /*los elementos deberan posicionarse de forma vertical y no horizontal*/
+}
+
+/*estilos para section hokage.html*/
+section figure#cuadro1{
+    padding: 5px;       /*distancia entre el margen interior y el margin*/
+    background-color: burlywood;
+    width: 20%;         /*para que ocupe un 20% del section*/
+    height: 300px;
+    text-align: center; /*para que el texto dentro esté centrado*/
+    border-radius: 5px; /*borde redondeado*/
+    column-count: 1;    /*para que su contenido esté en una columna*/
+}
+section figure#cuadro2{
+    padding: 5px;
+    background-color: burlywood;
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+    column-count: 1;
+}
+section figure#cuadro3{
+    padding: 5px;
+    background-color: burlywood;
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+    column-count: 1;
+}
+
+/*estilos para section de index.html*/
+section figure.bloque1{
+    background-color: burlywood;
+    width: 20%;
+    height: 320px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+section figure.bloque2{
+    background-color: burlywood;
+    width: 20%;
+    height: 320px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+section figure.bloque3{
+    background-color: burlywood;
+    width: 25%;
+    height: 322px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+section div p#bloque4{
+   margin-top: 90px;  /*va a separarse de la parte superior aumentando su margin*/
+}
+/*aquí acaban los estilos para index.html*/
+
+section div p#bloque402{  /*aunque las etiquetas sean las mismas les puse un id a cada uno ya que el tamaño de los elementos que lo preceden son difrerentes*/
+    margin-top: 100px;
+}
+
+/*estilos para el section de contacto.html*/
+section.contacto{
+    background: url(image/sello.png) center no-repeat; /*en el background se verá una imagen que estará centrada y no se repetirá*/
+    background-size: 30%; /*su tamaño alcanza un 30% del espacio en el fondo*/
+}
+
+/*estilos para curriculumvitae.html*/
+section.section103{
+    text-align: center; /*el texto u otros elementos dentro deberan centrase*/
+}
+section.section103 table{ /*estilos para la tabla dentro de .section103*/
+    text-align: center;   /*el texto u otros elementos dentro deberan centrase*/
+    margin-left: 35%;     /*deberá serpararse de margen un 35% del espacio*/
+}
+section.section103 table td#columna1{ /*la columna 1 de la tabla debe tener un backgroud de un color solido*/
+    background-color: burlywood;
+}
+
+/*estilos para información.html*/
+div iframe{ /*todas las etiquetas iframe dentro de un div devieran tener un margen exterior de 2%*/
+    margin-left: 2%; 
+    text-align: center;
+}
+div video{ /*todas las etiquetas video dentro de un div devieran tener un margen exterior de 2%*/
+    margin-left: 2%;
+}
+
+section.section104 div{ /*los elementos div dentro de section104 deben colocarse de forma horizontal-+*/
+    display: inline-block;
+}
