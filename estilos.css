@@ -226,4 +226,5 @@ div video{ /*todas las etiquetas video dentro de un div devieran tener un margen
 
 section.section104 div{ /*los elementos div dentro de section104 deben colocarse de forma horizontal-+*/
     display: inline-block;
+    margin-left: 2%;
 }
